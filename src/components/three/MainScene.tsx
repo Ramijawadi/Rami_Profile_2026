@@ -1,6 +1,6 @@
-import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload } from '@react-three/drei';
+import { Preload } from '@react-three/drei';
+import { Suspense } from 'react';
 import { FloatingScene } from './FloatingScene';
 
 export const MainScene = () => {

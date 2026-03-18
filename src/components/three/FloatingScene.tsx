@@ -1,6 +1,6 @@
-import React, { useRef, useMemo } from 'react';
+import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Float, Sphere, MeshDistortMaterial, MeshWobbleMaterial } from '@react-three/drei';
+import { Float, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
 const FloatingSphere = ({ position, color, size, speed, distort }: any) => {

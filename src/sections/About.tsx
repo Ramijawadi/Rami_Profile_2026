@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Briefcase, GraduationCap, Users, CheckCircle2, Star, Zap, Code, ShieldCheck } from 'lucide-react';
+import { Briefcase, GraduationCap, CheckCircle2, Star, Zap, Code, ShieldCheck } from 'lucide-react';
 
 const ExperienceItem = ({ year, role, company, description }: any) => (
   <motion.div
