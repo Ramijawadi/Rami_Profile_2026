@@ -97,7 +97,6 @@ export const Hero = () => {
           </a>
           <a href="#contact" className="btn-secondary group min-w-[180px]">
             Contact Me
-            <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
           </a>
         </motion.div>
 
