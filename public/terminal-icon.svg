@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Dynamic Gradient Definition -->
+  <defs>
+    <linearGradient id="bg_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#020617;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="border_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow_filter" x="-25%" y="-25%" width="150%" height="150%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#38bdf8" flood-opacity="0.6" result="glowColor"/>
+      <feComposite in="glowColor" in2="blur" operator="in" result="glowBlur"/>
+      <feMerge>
+        <feMergeNode in="glowBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Rect (Terminal Background) -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#bg_grad)" stroke="url(#border_grad)" stroke-width="2.5" filter="url(#glow_filter)" />
+  
+  <!-- Terminal Symbol: >_ -->
+  <g filter="url(#glow_filter)">
+    <path d="M22 20L34 32L22 44" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="38" y1="44" x2="48" y2="44" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" />
+  </g>
+</svg>

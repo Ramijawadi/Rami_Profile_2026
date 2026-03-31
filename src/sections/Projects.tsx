@@ -68,15 +68,15 @@ export const Projects = () => {
       description: 'Senior-level React platform for scaled commerce. Featuring SEO optimization, smooth Framer Motion interactions, and Radix UI components for high accessibility.',
       tech: ['React', 'Framer Motion', 'Radix UI', 'Vite'],
       github: 'https://github.com/Ramijawadi',
-      demo: 'https://ramijawadidev.netlify.app/',
+      demo: 'https://eksiplateform.vercel.app/',
     },
     {
       title: 'Admin Dashboard',
       tagline: 'Real-time Product CRM',
       description: 'Comprehensive product management system with real-time updates through Supabase. Built with type-safe architecture for maximum reliability and scalable data pipelines.',
-      tech: ['Next.js', 'Supabase', 'TypeScript', 'Tailwind'],
-      github: 'https://github.com/Ramijawadi',
-      demo: 'https://ramijawadidev.netlify.app/',
+      tech: ['Next.js', 'Ant Design', 'TypeScript', 'Tailwind'],
+      github: 'https://github.com/Ramijawadi/Dashboard_Antd',
+      demo: 'https://mydashboard-umber.vercel.app/',
     },
     {
       title: 'WaelAcademy',
@@ -84,20 +84,28 @@ export const Projects = () => {
       description: 'Modern modular React architecture for online learning. Focused on performance-first delivery and sub-second page loads. Deployed on Vercel with CI/CD optimization.',
       tech: ['React', 'Vite', 'Vercel', 'Tailwind CSS'],
       github: 'https://github.com/Ramijawadi',
-      demo: 'https://ramijawadidev.netlify.app/',
+      demo: 'https://www.waelacademy.com/',
     },
     {
-      title: 'MLM Platform (Tanit Project)',
+      title: 'Finance Application',
+      tagline: 'DELTA Cloud Management Project',
+      description: 'Finance Management Landing page including support and pricing sections.',
+      tech: ['Vercel', 'PWA', 'React', 'styled-components'],
+      github: 'https://github.com/Ramijawadi/FinanceApp',
+      demo: 'https://deltacloud.vercel.app/',
+    },
+      {
+      title: 'Multi-Vendor Platform',
       tagline: 'Enterprise Full-Stack CRM',
-      description: 'Complex administrative and adherent dashboards connected to a secure REST API backend. Implemented secure middleware, JWT authentication, and complex data models.',
-      tech: ['Node.js', 'Express', 'React', 'MongoDB'],
+      description: 'Complex administrative and E-Commerce dashboards connected to a secure REST API backend. Implemented secure middleware, JWT authentication, and complex data models.',
+      tech: ['Emotion','Material UI', 'React', 'supabase'],
       github: 'https://github.com/Ramijawadi',
-      demo: 'https://ramijawadidev.netlify.app/',
+      demo: 'https://eksi-2026.vercel.app/',
     },
   ];
 
   return (
-    <section id="projects" className="py-24 px-6 relative max-w-7xl mx-auto overflow-hidden">
+    <section id="projects" className="py-24 px-6 relative max-w-7xl mx-auto overflow-hidden scroll-mt-24">
       {/* Section Background Decorative */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-accent-blue/5 -skew-x-12 blur-[100px] pointer-events-none" />
 
@@ -117,7 +125,7 @@ export const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch pt-8">
           {projects.map((proj, i) => (
             <ProjectCard key={proj.title} {...proj} index={i} />
           ))}

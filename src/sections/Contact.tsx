@@ -66,19 +66,18 @@ export const Contact = () => {
     { icon: Github, label: 'GitHub', href: 'https://github.com/Ramijawadi', color: 'hover:text-white hover:bg-white/10' },
     { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/jawadi-rami/', color: 'hover:text-accent-blue hover:bg-accent-blue/10' },
     { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@ramijawadi4356', color: 'hover:text-red-500 hover:bg-red-500/10' },
-    { icon: Globe, label: 'Portfolio', href: 'https://ramijawadidev.netlify.app/', color: 'hover:text-accent-purple hover:bg-accent-purple/10' },
   ];
 
   return (
-    <section id="contact" className="py-24 px-6 relative max-w-7xl mx-auto">
+    <section id="contact" className="py-24 px-6 relative max-w-7xl mx-auto scroll-mt-24">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-accent-blue/10 rounded-full blur-[120px] pointer-events-none animate-pulse" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
         <div className="space-y-12">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-extrabold lg:text-left text-center tracking-tight">
               Let's Build Something <br />
-              <span className="neon-text-blue line-clamp-1">Great Together</span>
+              <span className="neon-text-blue line-clamp-0">Great Together</span>
             </h2>
             <div className="w-20 h-1.5 bg-accent-blue rounded-full md:mx-0 mx-auto" />
           </div>

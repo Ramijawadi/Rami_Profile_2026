@@ -20,7 +20,7 @@ const RotatingTitle = () => {
   }, []);
 
   return (
-    <div className="h-12 overflow-hidden">
+    <div className="h-12 overflow-hidden flex justify-center">
       <motion.div
         key={index}
         initial={{ y: 40, opacity: 0 }}
@@ -37,7 +37,7 @@ const RotatingTitle = () => {
 
 export const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden scroll-mt-24">
       {/* Background Glows */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-accent-blue/10 rounded-full blur-[120px] animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-accent-purple/10 rounded-full blur-[120px] animate-pulse delay-1000" />

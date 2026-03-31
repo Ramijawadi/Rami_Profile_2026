@@ -6,10 +6,10 @@ const ExperienceItem = ({ year, role, company, description }: any) => (
     initial={{ opacity: 0, x: -20 }}
     whileInView={{ opacity: 1, x: 0 }}
     viewport={{ once: true }}
-    className="relative pl-12 pb-14 last:pb-0 group"
+    className="relative pl-8 md:pl-12 pb-14 last:pb-0 group"
   >
     {/* Line */}
-    <div className="absolute left-[11px] top-2 bottom-0 w-px bg-white/10 group-last:hidden" />
+    <div className="absolute left-[9px] md:left-[11px] top-2 bottom-0 w-px bg-white/10 group-last:hidden" />
     
     {/* Dot */}
     <div className="absolute left-0 top-0 w-6 h-6 rounded-full bg-[#020617] border-2 border-accent-blue/50 flex transition-all group-hover:scale-110 group-hover:border-accent-blue shadow-lg shadow-accent-blue/10" />
@@ -32,9 +32,9 @@ const SkillPill = ({ name }: any) => (
 
 export const About = () => {
   return (
-    <section id="about" className="py-24 px-6 relative max-w-7xl mx-auto">
+    <section id="about" className="py-24 px-6 relative max-w-7xl mx-auto scroll-mt-24">
       {/* Bio & Stats */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start mb-32">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-32">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -50,7 +50,7 @@ export const About = () => {
           </div>
 
           <p className="text-xl text-gray-400 leading-relaxed lg:text-left text-center">
-            Full-Stack JavaScript Developer with **7+ years** of professional experience. 
+            Full-Stack JavaScript Developer with 7+ years of professional experience. 
             Designing and delivering high-performance, impactful digital experiences using 
             React.js, Next.js, Angular, Node.js, and NestJS. 
             Passionate about performance, clean code, and clean architecture.
@@ -76,7 +76,7 @@ export const About = () => {
               <Star className="w-4 h-4 text-accent-blue" /> Core Expertise
             </h4>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-              {['TypeScript', 'React.js', 'Next.js', 'NestJS', 'Node.js', 'Angular', 'Docker', 'AWS S3', 'MongoDB', 'Supabase'].map((skill) => (
+              {['TypeScript','JavaScript', 'React.js', 'Next.js', 'Nest.js', 'Node.js', 'Angular','Express.js', 'Docker', 'AWS S3', 'MongoDB', 'Supabase'].map((skill) => (
                 <SkillPill key={skill} name={skill} />
               ))}
             </div>
@@ -84,7 +84,7 @@ export const About = () => {
         </motion.div>
 
         {/* Experience Timeline */}
-        <div className="space-y-12">
+        <div id="experience" className="space-y-12 scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold lg:text-left text-center">Work History</h2>
             <div className="w-20 h-1.5 bg-accent-blue rounded-full md:mx-0 mx-auto" />

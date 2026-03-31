@@ -32,7 +32,7 @@ function App() {
           <MainScene />
           <Navbar />
           
-          <main className="relative z-10">
+          <main className="relative z-10 w-full overflow-x-hidden">
             <Hero />
             <About />
             <Projects />

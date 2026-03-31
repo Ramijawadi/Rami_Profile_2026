@@ -46,12 +46,16 @@ export const Navbar = () => {
     <nav
       className={cn(
         'fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300',
-        scrolled ? 'bg-[#020617]/80 backdrop-blur-md border-b border-white/5 py-3 shadow-lg' : 'bg-transparent'
+        (scrolled || mobileOpen) ? 'bg-[#020617]/90 backdrop-blur-xl border-b border-white/5 py-3 shadow-lg' : 'bg-transparent'
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <motion.a
           href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-2 group"
@@ -107,8 +111,22 @@ export const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="block px-4 py-2 text-lg font-medium text-white hover:bg-white/5 rounded-xl transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileOpen(false);
+                  
+                  // Allow menu to start closing then scroll
+                  setTimeout(() => {
+                    const target = document.querySelector(link.href);
+                    if (target) {
+                      target.scrollIntoView({ 
+                         behavior: 'smooth',
+                         block: 'start'
+                      });
+                    }
+                  }, 100);
+                }}
+                className="block px-4 py-2 text-lg font-medium text-white hover:bg-white/5 rounded-xl transition-colors text-center"
               >
                 {link.name}
               </a>
