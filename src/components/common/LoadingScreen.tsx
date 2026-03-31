@@ -31,7 +31,7 @@ export const LoadingScreen = () => {
         </div>
 
         <div className="flex flex-col items-center space-y-2">
-          <div className="text-gray-500 font-mono text-[10px] tracking-[0.4em] uppercase">Opening Portfolio ...</div>
+          <div className="text-gray-500 font-mono text-[10px] tracking-[0.4em] uppercase">Loading Portfolio...</div>
           <div className="w-48 h-1 bg-white/5 rounded-full overflow-hidden">
             <motion.div
               initial={{ width: 0 }}
