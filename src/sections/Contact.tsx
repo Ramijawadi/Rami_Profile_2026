@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, MapPin, Mail, Phone, CheckCircle, Github, Linkedin, Youtube, Globe, AlertCircle } from 'lucide-react';
+import { Send, MapPin, Mail, Phone, CheckCircle, Github, Linkedin, Youtube, AlertCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 // Initialize EmailJS

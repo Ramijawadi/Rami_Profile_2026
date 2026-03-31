@@ -24,7 +24,7 @@ export const LoadingScreen = () => {
              initial={{ scale: 0.8, opacity: 0 }}
              animate={{ scale: [0.8, 1.2, 0.8], opacity: [0.2, 1, 0.2] }}
              transition={{ duration: 2, repeat: Infinity }}
-             className="absolute inset-0 flex items-center justify-center font-display font-black text-accent-blue text-2xl"
+             className="absolute inset-0 flex items-center justify-center font-display font-black text-accent-blue text-4xl"
           >
             RJ
           </motion.div>
