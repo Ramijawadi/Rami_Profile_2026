@@ -10,6 +10,7 @@ const ProjectCard = ({ title, tagline, description, tech, demo, index }: any) =>
       transition={{ delay: index * 0.1 }}
       className="group relative h-full flex flex-col"
     >
+      
       {/* Glow Effect on Hover */}
       <div className="absolute inset-x-0 -top-px h-px w-full bg-gradient-to-r from-transparent via-accent-blue/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
       <div className="absolute inset-x-0 -bottom-px h-px w-full bg-gradient-to-r from-transparent via-accent-purple/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
