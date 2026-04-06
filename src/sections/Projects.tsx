@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowUpRight, Code } from 'lucide-react';
 
-const ProjectCard = ({ title, tagline, description, tech, github, demo, index }: any) => {
+const ProjectCard = ({ title, tagline, description, tech, demo, index }: any) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -20,13 +20,7 @@ const ProjectCard = ({ title, tagline, description, tech, github, demo, index }:
             <Code className="w-6 h-6 text-accent-blue" />
           </div>
           <div className="flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
-            <a href={github} className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href={demo} className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="w-5 h-5" />
-            </a>
-          </div>
+        </div>
         </div>
 
         <div className="space-y-2">
@@ -67,7 +61,6 @@ export const Projects = () => {
       tagline: 'High-Performance E-commerce',
       description: 'Senior-level React platform for scaled commerce. Featuring SEO optimization, smooth Framer Motion interactions, and Radix UI components for high accessibility.',
       tech: ['React', 'Framer Motion', 'Radix UI', 'Vite'],
-      github: 'https://github.com/Ramijawadi',
       demo: 'https://eksiplateform.vercel.app/',
     },
     {
@@ -83,7 +76,6 @@ export const Projects = () => {
       tagline: 'Educational Platform',
       description: 'Modern modular React architecture for online learning. Focused on performance-first delivery and sub-second page loads. Deployed on Vercel with CI/CD optimization.',
       tech: ['React', 'Vite', 'Vercel', 'Tailwind CSS'],
-      github: 'https://github.com/Ramijawadi',
       demo: 'https://www.waelacademy.com/',
     },
     {
@@ -99,7 +91,6 @@ export const Projects = () => {
       tagline: 'Enterprise Full-Stack CRM',
       description: 'Complex administrative and E-Commerce dashboards connected to a secure REST API backend. Implemented secure middleware, JWT authentication, and complex data models.',
       tech: ['Emotion','Material UI', 'React', 'supabase'],
-      github: 'https://github.com/Ramijawadi',
       demo: 'https://eksi-2026.vercel.app/',
     },
   ];

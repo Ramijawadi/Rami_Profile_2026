@@ -212,7 +212,7 @@ export const Contact = () => {
            <span className="text-lg font-black text-white tracking-widest uppercase">RAMI JAWADI</span>
          </div>
          <p className="text-[10px] uppercase tracking-[0.4em] text-gray-700 font-bold">
-           &copy; 2026 Developed by Rami J. • Next-Gen Portfolio Engine 
+           &copy; 2026 Developed  © by Rami J. 
          </p>
       </div>
     </section>
